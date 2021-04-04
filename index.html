@@ -2,24 +2,11 @@
 
 <html>
     <head>
-        <script>
-            alert ("you look beautiful today");
-            
-            </script>
 
         <title>wireframe</title>
         <img src="https://codesign.com.bd/conversations/content/images/2020/03/Sprint-logo-design-Codesign-agency.png" alt="" width="100px">
     </head>
 
-    <p>Click the button for a surprise.</p>
-
-    <button onclick="myFunction()">Here</button>
-    
-    <script>
-    function myFunction() {
-      alert("you have won a free issue");
-    }
-    </script>
 
     <body>
         <header>
@@ -29,12 +16,45 @@
                 <a href="#contact">Contact</a>
                 <a href="#about">About</a>
               </div>
-                <ul> 
+
+
+              <p>Click the button and tell us your favorite topic.</p>
+
+              <button onclick="myFunction()">click here</button>
+              
+              <p id="demo"></p>
+              
+              <script>
+              function myFunction() {
+                var text;
+                var favDrink = prompt("What's your favorite topic?", "sports");
+                switch(favDrink) {
+                  case "sports":
+                    text = "Excellent choice. sports is good for your soul.";
+                    break;
+                  case "fashion":
+                    text = "fashion is how we express our personality!";
+                    break;
+                  case "technology":
+                    text = "wow, you must be really smart then?";
+                    break;
+                  default:
+                    text = "sorry, we don't have that one in this issue";
+                }
+                document.getElementById("demo").innerHTML = text;
+              }
+              </script>
+              
+
+
+              <ul> 
                     <li><a href="https://www.google.com">sports</a></li>
                     <li><a href="https://www.google.com">technology</a></li>
                     <li><a href="https://www.google.com">fashion</a></li>
                     <li><a href="https://www.google.com">economy</a></li>
                 </ul>
+
+
             </nav>
         </header>
         <img src="https://upload.wikimedia.org/wikipedia/en/1/13/Fast_Company_October_2009_cover.jpg" alt="" width="50%">
