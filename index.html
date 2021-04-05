@@ -4,7 +4,14 @@
     <head>
 
         <title>wireframe</title>
-        <img src="https://codesign.com.bd/conversations/content/images/2020/03/Sprint-logo-design-Codesign-agency.png" alt="" width="100px">
+       <img src="https://codesign.com.bd/conversations/content/images/2020/03/Sprint-logo-design-Codesign-agency.png" alt="" width="100px"> 
+       <style>
+        img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        </style>
     </head>
 
 
@@ -16,38 +23,7 @@
                 <a href="#contact">Contact</a>
                 <a href="#about">About</a>
               </div>
-
-
-              <p>Click the button and tell us your favorite topic.</p>
-
-              <button onclick="myFunction()">click here</button>
-              
-              <p id="demo"></p>
-              
-              <script>
-              function myFunction() {
-                var text;
-                var favDrink = prompt("What's your favorite topic?", "sports");
-                switch(favDrink) {
-                  case "sports":
-                    text = "Excellent choice. sports is good for your soul.";
-                    break;
-                  case "fashion":
-                    text = "fashion is how we express our personality!";
-                    break;
-                  case "technology":
-                    text = "wow, you must be really smart then?";
-                    break;
-                  default:
-                    text = "sorry, we don't have that one in this issue";
-                }
-                document.getElementById("demo").innerHTML = text;
-              }
-              </script>
-              
-              <script src = "apps.js">
-              </script>
-
+         
               <ul> 
                     <li><a href="https://www.google.com">sports</a></li>
                     <li><a href="https://www.google.com">technology</a></li>
@@ -55,6 +31,9 @@
                     <li><a href="https://www.google.com">economy</a></li>
                 </ul>
 
+     <p>Click the button and tell us your favorite topic.</p>
+
+ <button onclick="myFunction()">click here</button>
 
             </nav>
         </header>
@@ -81,14 +60,16 @@
   <img id="myImage" src="https://media3.giphy.com/media/3og0IFqZd7qHpM2LE4/giphy_s.gif" style="width:300px">
   
   <button onclick="document.getElementById('myImage').src='http://90min-images.s3.amazonaws.com/production/media/5a5dd68074758f77cf000001.gif'">No</button>
-
-
-
-
-    </body>
-<footer>
+  <footer>
     <article>all rights reserved 2021 &copy;
     </article>
     <a href="https://www.google.com">Visit our social media platforms</a>
 </footer>
+
+<script src = 'apps.js'> </script>
+<link rel="stylesheet" href="styles.css">
+
+</image>
+    </body>
+
 </html>
