@@ -1,9 +1,9 @@
+
 var password = prompt('please enter your password');
 while(password !== 'ashraf'){
     console.log('your input is:' , password);
     password = prompt('the password you entered is incorrect, try again');
 }
-
 
 
 
